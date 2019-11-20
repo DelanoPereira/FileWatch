@@ -12,7 +12,7 @@ public class FilewatchServiceImpl implements FilewatchService {
     public boolean hasFileDirectoryBeenUpdated() throws IOException, InterruptedException {
         boolean isUpdatedOrChanged = false;
 
-            WatchService watchService = FileSystems.getDefault().newWatchService();
+           /* WatchService watchService = FileSystems.getDefault().newWatchService();
 
             Path path = Paths.get(System.getProperty("user.home")+"\\Desktop\\FileWatch");
 
@@ -32,6 +32,7 @@ public class FilewatchServiceImpl implements FilewatchService {
                 if(isUpdatedOrChanged)
                     break;
             }
+            */
         return isUpdatedOrChanged;
     }
 }
